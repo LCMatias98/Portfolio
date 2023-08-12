@@ -1,0 +1,60 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Navbar */
+  .navbar {
+    margin-bottom: 20px;
+  }
+  
+  /* Secciones */
+  .section-heading {
+    margin-bottom: 20px;
+  }
+  
+  /* Proyectos */
+  .project-details {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .project-details h4 {
+    margin-top: 0;
+  }
+  
+  /* Carrusel */
+  .carousel-item img {
+    max-height: 300px;
+    object-fit: cover;
+  }
+  
+  /* Contacto */
+  .contact-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+  }
+  
+  /* Estilos específicos para la versión móvil */
+  @media (max-width: 768px) {
+    .project-details {
+      padding: 10px;
+    }
+  }
+  /* Estilo para el navbar sticky */
+.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Asegura que el navbar esté por encima de otros elementos */
+  }
+  
+  /* Añade esta clase al navbar */
+  .navbar {
+    transition: background-color 0.3s ease-in-out; /* Agrega una transición suave para el cambio de color de fondo */
+  }
+  
+  /* Estilo de fondo para el navbar en modo sticky */
+  .navbar.sticky {
+    background-color: rgba(0, 0, 0, 0.9); /* Cambia el color de fondo cuando el navbar se vuelva sticky */
+  }
+  
