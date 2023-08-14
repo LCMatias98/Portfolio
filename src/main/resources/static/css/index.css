@@ -34,6 +34,11 @@ body {
     background-color: #f9f9f9;
     padding: 20px;
   }
+  .images img {
+    height: 120px;
+    width: 100px; /* Ajusta el tamaño de las imágenes */
+    margin: 20px; /* Añade un espacio entre las imágenes */
+}
   
   /* Estilos específicos para la versión móvil */
   @media (max-width: 768px) {

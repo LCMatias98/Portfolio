@@ -14,13 +14,15 @@ public class Contact {
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native") // strategia para generar pk auto
     @GenericGenerator(name = "native", strategy = "native") //strategia por defecto db
     private Long id;
+    private String email;
     private String subject;
     private String message;
 
     public Contact() {
     }
 
-    public Contact(String subject, String message) {
+    public Contact(String email,String subject, String message) {
+        this.email = email;
         this.subject = subject;
         this.message = message;
     }
@@ -31,6 +33,14 @@ public class Contact {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getSubject() {
