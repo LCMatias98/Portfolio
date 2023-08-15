@@ -9,6 +9,7 @@ import java.util.List;
 
 public class ProyectDTO {
 
+    private Long id;
     private String name;
     private String description;
     private String images;
@@ -20,7 +21,12 @@ public class ProyectDTO {
     private LocalDate endDate;
     private StatusProyect statusProyect;
 
+    //Para leer loco
+    public ProyectDTO() {
+    }
+
     public ProyectDTO(Proyect proyect){
+        this.id = proyect.getId();
         this.name = proyect.getName();
         this.description = proyect.getDescription();
         this.images = proyect.getImages();
@@ -30,6 +36,10 @@ public class ProyectDTO {
         this.startDate = proyect.getStartDate();
         this.endDate = proyect.getEndDate();
         this.statusProyect = proyect.getStatusProyect();
+    }
+
+    public Long getId() {
+        return id;
     }
 
     public String getName() {
